@@ -27,9 +27,9 @@ productivityScore = (transactionValue/numOfTransactions)/numOfShifts
 
 if productivityScore <= 30:
   employeeBonus = 50.00 
-elif productivityScore > 31 or productivityScore < 69:
+elif productivityScore > 31 and productivityScore < 69:
   employeeBonus = 75.00
-elif productivityScore > 70 or productivityScore < 199:
+elif productivityScore > 70 and productivityScore < 199:
   employeeBonus = 100.00
 elif productivityScore >= 200:
   employeeBonus = 200.00
