@@ -1,3 +1,8 @@
+# Initialize Values
+employeeBonus = 0.00
+numOfShifts = 0
+numOfTransactions = 0
+
 # Employee Name
 
 employeeName = input("Please enter the employee name: ")
@@ -19,6 +24,7 @@ numOfShifts = int(input("Please input the number of shifts worked: "))
 productivityScore = (transactionValue/numOfTransactions)/numOfShifts
 
 # Nested if-statements
+
 if productivityScore <= 30:
   employeeBonus = 50.00 
 elif productivityScore > 31 or productivityScore < 69:
@@ -27,3 +33,8 @@ elif productivityScore > 70 or productivityScore < 199:
   employeeBonus = 100.00
 elif productivityScore >= 200:
   employeeBonus = 200.00
+
+# Output
+
+print("Employee Name: " + employeeName )
+print("Employee Bonus: " + "$" +str(employeeBonus))
